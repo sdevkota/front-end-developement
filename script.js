@@ -15,20 +15,20 @@ $(document).ready(function () {
                 $(element).css({ 'background': this.color });
                 setTimeout(function () {
                     NProgress.done();
-                }, 2000);
+                }, 3000);
             }
             if (this.type == "btn") {
-                element.text(text).append('<img src="/assets/img/btn-loader.gif" width="20">');
+                element.text(text).append('<img src="/projectloader/assets/img/btn-loader.gif" width="20">');
                 setTimeout(function(){
-                    element.empty('<img src="/assets/img/btn-loader.gif" width="20">').text("BUY A COURSE");
+                    element.empty('<img src="/projectloader/assets/img/btn-loader.gif" width="20">').text("BUY A COURSE");
                 },3000);
             }
             if (this.type == "div") {
                 $(element).empty();
-                $(element).css("background","url('/assets/img/div-loader.gif') no-repeat 50%");
+                $(element).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
                     window.location="/"
-                },3000);
+                },4000);
             }
         };
     }
@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $('.btn-info').on('click', function () {
-        let loader = new Loader("btn", $(this), "white", "please wait ", "/btn-loader");
+        let loader = new Loader("btn", $(this), "white", "please wait ");
         loader.run();
     });
     $('.bg-brand-green').on('click', function () {
