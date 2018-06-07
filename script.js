@@ -34,7 +34,7 @@ $(document).ready(function () {
     }
     $('.bg-brand-primary').on('click', function (e) {
         e.preventDefault();
-        let loader = new Loader("top","#nprogress .bar", "white");
+        let loader = new Loader("top","#nprogress .bar", "red");
         loader.run();
     });
 
