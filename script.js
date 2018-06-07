@@ -32,28 +32,34 @@ $(document).ready(function () {
             }
         };
     }
-    $('.bg-brand-primary').on('click', function () {
+    $('.bg-brand-primary').on('click', function (e) {
+        e.preventDefault();
         let loader = new Loader("top","#nprogress .bar", "white");
         loader.run();
     });
 
-    $('.btn-info').on('click', function () {
+    $('.btn-info').on('click', function (e) {
+        e.preventDefault();
         let loader = new Loader("btn", $(this), "white", "please wait ");
         loader.run();
     });
-    $('.bg-brand-green').on('click', function () {
+    $('.bg-brand-green').on('click', function (e) {
+        e.preventDefault();
         let loader = new Loader("top","#nprogress .bar", "#FFB511");
         loader.run();
     });
-    $('.bg-brand-yellow').on('click', function () {
+    $('.bg-brand-yellow').on('click', function (e) {
+        e.preventDefault();
         let loader = new Loader("top","#nprogress .bar", "white");
         loader.run();
     });
-    $('.bg-brand-create').on('click', function () {
+    $('.bg-brand-create').on('click', function (e) {
+        e.preventDefault();
         let loader = new Loader("top","#nprogress .bar", "#0FB0E2");
         loader.run();
     });
     $('.src-code').on('click', function () {
+        e.preventDefault();
         let loader = new Loader("div", "#card-1");
         loader.run();
     });
