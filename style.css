@@ -69,3 +69,7 @@
 #card-1{
     min-height: 410px;
 }
+/*Overriding */
+.btn:focus{
+    box-shadow: none !important;
+}

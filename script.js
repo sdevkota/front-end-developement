@@ -58,7 +58,7 @@ $(document).ready(function () {
         let loader = new Loader("top","#nprogress .bar", "#0FB0E2");
         loader.run();
     });
-    $('.src-code').on('click', function () {
+    $('.src-code').on('click', function (e) {
         e.preventDefault();
         let loader = new Loader("div", "#card-1");
         loader.run();
