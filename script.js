@@ -24,11 +24,11 @@ $(document).ready(function () {
                 },3000);
             }
             if (this.type == "div") {
-                var el=element;
+                var url=$(element).find("button").attr("data-link");
                 $(element).empty();
                 $(el).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
-                    window.location=$(el).find("button").attr("data-link");
+                    window.location=url;
                 },1000);
             }
         };
