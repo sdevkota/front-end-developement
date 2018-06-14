@@ -29,7 +29,7 @@ $(document).ready(function () {
                 $(element).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
                     window.location=url;
-                },1000);
+                },500);
             }
         };
     }
