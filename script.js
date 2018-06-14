@@ -27,8 +27,8 @@ $(document).ready(function () {
                 $(element).empty();
                 $(element).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
-                    window.location="/projectloader"
-                },4000);
+                    window.location=$(element).find("button").attr("data-link");
+                },1000);
             }
         };
     }
