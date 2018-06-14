@@ -26,7 +26,7 @@ $(document).ready(function () {
             if (this.type == "div") {
                 var el=element;
                 $(element).empty();
-                $(element).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
+                $(el).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
                     window.location=$(el).find("button").attr("data-link");
                 },1000);
