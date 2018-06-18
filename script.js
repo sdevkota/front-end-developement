@@ -61,7 +61,8 @@ $(document).ready(function () {
     });
     $('.src-code').on('click', function (e) {
         e.preventDefault();
-        let loader = new Loader("div", "#card-1");
+        let loader = new Loader("div", $(this).attr("data-id"));
+        console.log($(this).attr("data-id"));
         loader.run();
     });
    
