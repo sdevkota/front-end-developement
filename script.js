@@ -18,15 +18,15 @@ $(document).ready(function () {
                 }, 3000);
             }
             if (this.type == "btn") {
-                element.text(text).append('<img src="/projectloader/assets/img/btn-loader.gif" width="20">');
+                element.text(text).append('<img src="assets/img/btn-loader.gif" width="20">');
                 setTimeout(function(){
-                    element.empty('<img src="/projectloader/assets/img/btn-loader.gif" width="20">').text("BUY A COURSE");
+                    element.empty('<img src="assets/img/btn-loader.gif" width="20">').text("BUY A COURSE");
                 },3000);
             }
             if (this.type == "div") {
                 var url=$(element).find("button").attr("data-link");
                 $(element).empty();
-                $(element).css("background","url('/projectloader/assets/img/div-loader.gif') no-repeat 50%");
+                $(element).css("background","url('assets/img/div-loader.gif') no-repeat 50%");
                 setTimeout(function(){
                     window.location=url;
                 },500);
