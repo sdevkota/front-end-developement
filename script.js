@@ -8,6 +8,7 @@ $(document).ready(function () {
         this.loaderPath = loaderPath;
         this.run = function () {
             if (this.type == "top") {
+                var url=$(element).attr("data-link");
                 NProgress.configure({
                     showSpinner: false
                 });
@@ -15,12 +16,14 @@ $(document).ready(function () {
                 $(element).css({ 'background': this.color });
                 setTimeout(function () {
                     NProgress.done();
+                    window.location=url;
                 }, 3000);
             }
             if (this.type == "btn") {
+                var url=$(element).attr("data-link");
                 element.text(text).append('<img src="assets/img/btn-loader.gif" width="20">');
                 setTimeout(function(){
-                    element.empty('<img src="assets/img/btn-loader.gif" width="20">').text("BUY A COURSE");
+                   window.location=url;
                 },3000);
             }
             if (this.type == "div") {
