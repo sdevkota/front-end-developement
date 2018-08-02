@@ -68,8 +68,14 @@
 }
 .box-shadow{
     min-height: 410px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease-in-out;
 }
 /*Overriding */
 .btn:focus{
     box-shadow: none !important;
 }
+.box-shadow:hover {
+    box-shadow: 0 5px 15px 2px rgba(18, 18, 18, 0.2);
+     
+    }
