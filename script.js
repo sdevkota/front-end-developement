@@ -16,14 +16,14 @@ $(document).ready(function () {
                 setTimeout(function () {
                     NProgress.done();
                     window.location="https://vuejs.org";
-                }, 1000);
+                }, 500);
             }
             if (this.type == "btn") {
                 var url=$(element).attr("data-link");
                 element.text(text).append('<img src="assets/img/btn-loader.gif" width="20">');
                 setTimeout(function(){
                    window.location=url;
-                },3000);
+                },500);
             }
             if (this.type == "div") {
                 var url=$(element).find("button").attr("data-link");
